@@ -8,6 +8,8 @@ Core methods are implemented. Options class is not yet implemented.
 
 Built against Blazor 0.2.1.
 
+Check the running application at [https://misc.rthand.com/samples/blazor-redux-devtools-extension](https://misc.rthand.com/samples/blazor-redux-devtools-extension)
+
 ## Sample usage
 
 You find sample usage in BlazorReduxDevToolsExtensionApp application.
