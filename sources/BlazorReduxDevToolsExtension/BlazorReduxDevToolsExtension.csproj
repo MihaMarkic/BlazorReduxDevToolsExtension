@@ -7,6 +7,21 @@
     <BlazorLinkOnBuild>false</BlazorLinkOnBuild>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>Righthand.BlazorReduxDevToolsExtension</PackageId>
+    <Authors>Miha Markic</Authors>
+    <Company>Righthand</Company>
+    <Description>Blazor interop library for Redux DevTools extension.</Description>
+    <PackageProjectUrl>https://github.com/MihaMarkic/Righthand.BlazorReduxDevToolsExtensionr</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MihaMarkic/Righthand.BlazorReduxDevToolsExtension/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>blazor redux-devtools-extension</PackageTags>
+    <IncludeSymbols>false</IncludeSymbols>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReleaseNotes>See https://github.com/MihaMarkic/Righthand.BlazorReduxDevToolsExtension/blob/master/ReleaseNotes.md</PackageReleaseNotes>
+    <Version>1.0.0-preview1</Version>
+  </PropertyGroup>
+
   <ItemGroup>
     <!-- .js/.css files will be referenced via <script>/<link> tags; other content files will just be included in the app's 'dist' directory without any tags referencing them -->
     <EmbeddedResource Include="content\**\*.js" LogicalName="blazor:js:%(RecursiveDir)%(Filename)%(Extension)" />

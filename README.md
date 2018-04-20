@@ -1,4 +1,4 @@
-# BlazorReduxDevToolsExtension
+# Righthand.BlazorReduxDevToolsExtension
 
 [![NuGet](https://img.shields.io/nuget/v/Righthand.BlazorReduxDevToolsExtension.svg)](https://www.nuget.org/packages/Righthand.BlazorReduxDevToolsExtension)
 
