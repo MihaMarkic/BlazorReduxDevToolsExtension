@@ -1,0 +1,32 @@
+﻿@using BlazorReduxDevToolsExtension
+@page "/"
+
+<h1>ReduxDevTools Extension interop</h1>
+
+<div>Present <b>@IsAvailable</b></div>
+<div>Last Message</div>
+<div>@LastMessage</div>
+
+@functions {
+    public bool IsAvailable => ReduxDevToolsExtension.IsAvailable();
+    public string LastMessage { get; private set; } = "Nothing yet";
+
+    protected override void OnInit()
+    {
+        if (IsAvailable)
+        {
+            ReduxDevToolsExtension.Connect();
+            ReduxDevToolsExtension.Init(new { Tubo = 88 });
+            ReduxDevToolsExtension.MessageReceived += (s, e) =>
+            {
+                LastMessage = e.Message;
+                StateHasChanged();
+            };
+            ReduxDevToolsExtension.Subscribe();
+            ReduxDevToolsExtension.Send(new { type = "AnAction" }, new { Tubo = 109 });
+            ReduxDevToolsExtension.Send(new { type = "Another" }, new { Tubo = 504 });
+            //ReduxDevToolsExtension.UnSubscribe();
+            //ReduxDevToolsExtension.Disconnect();
+        }
+    }
+}
