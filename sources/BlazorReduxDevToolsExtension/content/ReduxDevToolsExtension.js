@@ -6,7 +6,7 @@ const methodName = "OnMessageReceived";
 const withDevTools = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__);
 const BlazorReduxDevToolsExtension = {};
 Blazor.registerFunction('BlazorReduxDevToolsExtension.IsAvailable', function () {
-    return withDevTools !== null;
+    return withDevTools !== undefined;
 });
 Blazor.registerFunction('BlazorReduxDevToolsExtension.Connect', function (options) {
     BlazorReduxDevToolsExtension.devTools = withDevTools.connect(options);
