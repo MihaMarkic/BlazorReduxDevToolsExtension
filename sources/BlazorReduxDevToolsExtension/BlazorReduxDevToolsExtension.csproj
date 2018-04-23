@@ -13,13 +13,12 @@
     <Authors>Miha Markic</Authors>
     <Company>Righthand</Company>
     <Description>Blazor interop library for Redux DevTools extension.</Description>
-    <PackageProjectUrl>https://github.com/MihaMarkic/Righthand.BlazorReduxDevToolsExtensionr</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/MihaMarkic/Righthand.BlazorReduxDevToolsExtension/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/MihaMarkic/BlazorReduxDevToolsExtension</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MihaMarkic/BlazorReduxDevToolsExtension/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>blazor redux-devtools-extension</PackageTags>
     <IncludeSymbols>false</IncludeSymbols>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <PackageReleaseNotes>See https://github.com/MihaMarkic/Righthand.BlazorReduxDevToolsExtension/blob/master/ReleaseNotes.md</PackageReleaseNotes>
-    <Version>1.0.0-preview1</Version>
+    <Version>1.0.0-preview2</Version>
   </PropertyGroup>
 
   <ItemGroup>
